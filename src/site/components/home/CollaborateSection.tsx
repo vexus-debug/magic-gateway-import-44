@@ -87,14 +87,14 @@ const CollaborateSection = () => {
               <Lock className="h-6 w-6 text-[hsl(var(--medical-teal))]" />
             </div>
             <h2 className="mb-4 text-3xl font-bold tracking-tight text-white md:text-4xl">
-              A Team You Can Trust, Without Watching Their Every Move
+              Software That Understands Who Is in the Room
             </h2>
             <p className="mb-6 text-lg leading-relaxed text-white/60">
-              Your dentists chart teeth. Your receptionists manage bookings. Your lab techs handle cases. Your accountants track the money. Everyone sees only what they need, nothing more, nothing they shouldn't.
+              A dentist never sees ophthalmology fields. An optometrist never navigates hospital inpatient forms. Every specialist works with the tools their discipline demands, and nothing else.
             </p>
             <ul className="space-y-3">
               {[
-"9 ready made roles: Owner, Admin, Dentist, Hygienist, and more",
+"Roles shaped by each specialty, from dentist to optometrist",
 "Your data locked down, record by record",
 "Every action logged, so nothing goes unaccounted for",
 "Talk to your team without a single WhatsApp group",

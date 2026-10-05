@@ -13,27 +13,27 @@ const overviewScreenshot = overviewAsset.url;
 const results = [
   {
     icon: Clock,
-    label: "Fewer Empty Chairs",
-    value: "40%",
-    sub: "Fewer no shows. Patients get reminded automatically so they actually show up",
+    label: "Pillar One",
+    value: "Native Clinical Workflows",
+    sub: "Perio charting for dental. Refraction and lens orders for eye care. Real clinical tools, not blank notes",
     color: "from-[hsl(var(--primary))] to-[hsl(var(--medical-teal))]",
     image: appointmentsScreenshot,
     imageAlt: "Eye clinic appointments and patient schedule in Clinexus",
   },
   {
     icon: TrendingUp,
-    label: "Revenue You Can See",
-    value: "100%",
-    sub: "Know exactly what you earned, what's owed, and who's making you the most money",
+    label: "Pillar Two",
+    value: "Specialty Operations",
+    sub: "Multi visit treatment billing, specialized lab tracking and optical inventory, handled the way your field handles them",
     color: "from-[hsl(var(--primary))] to-[hsl(var(--primary))]/60",
     image: dashboardScreenshot,
     imageAlt: "Eye clinic dashboard showing revenue and performance in Clinexus",
   },
   {
     icon: ShieldCheck,
-    label: "A Team That Stays in Their Lane",
-    value: "9 Roles",
-    sub: "Every staff member sees only what they need, no more, no less",
+    label: "Pillar Three",
+    value: "One Platform, Distinct Systems",
+    sub: "Every specialty gets its own dedicated system. No forced compromises",
     color: "from-[hsl(var(--medical-teal))] to-[hsl(var(--primary))]",
     image: overviewScreenshot,
     imageAlt: "Clinexus eye clinic overview with role-specific operational information",
@@ -59,13 +59,13 @@ const SolutionSection = () => {
               The Problem We Solve
             </span>
             <h2 className="mb-5 text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-[2.75rem] lg:leading-[1.15]">
-              You Didn't Go to Medical School{" "}
+              When Healthcare Software Is Built for Everyone,{" "}
               <span className="bg-muted/20 ">
-                to Manage Spreadsheets
+                It Works for No One
               </span>
             </h2>
             <p className="mb-8 max-w-md text-base leading-relaxed text-muted-foreground">
-              You did not open your clinic to chase payments, patch up records, count stock and police staff. Yet those things quietly take three or four hours from you every day. Time stolen from patients, from growth, from your family. Clinexus hands it back.
+              A dental practice, an eye clinic, a diagnostic lab and a fertility centre work completely differently. Generic software forces your specialty's core clinical processes into text boxes, plugins and manual workarounds. Clinexus delivers a dedicated system built for the realities of your field.
             </p>
             <Link to="/industries/eye-clinics/features">
               <Button className="gap-2 rounded-md bg-primary px-8 text-white shadow-md hover:opacity-90">
@@ -102,7 +102,7 @@ const SolutionSection = () => {
                     <result.icon className="h-5 w-5 text-primary" />
                   </div>
                   <div className="mb-1 text-sm text-muted-foreground">{result.label}</div>
-                  <div className={`bg-gradient-to-r ${result.color} bg-clip-text text-4xl font-extrabold text-transparent`}>
+                  <div className={`bg-gradient-to-r ${result.color} bg-clip-text text-2xl font-extrabold text-transparent`}>
                     {result.value}
                   </div>
                   <div className="mt-1 text-xs text-muted-foreground">{result.sub}</div>

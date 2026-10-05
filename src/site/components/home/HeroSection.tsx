@@ -6,9 +6,9 @@ import dashboardAsset from "@/assets/current-dashboard/dental-dashboard.png.asse
 const dashboardScreenshot = dashboardAsset.url;
 
 const proofPoints = [
-  { value: "3–4 hrs", label: "Admin time given back each day" },
-  { value: "40%", label: "Fewer no shows with automatic reminders" },
-  { value: "9", label: "Staff roles with their own access" },
+  { value: "Specialized", label: "Clinical systems built for each field of care" },
+  { value: "Zero", label: "Workarounds, manual notes or spreadsheets" },
+  { value: "Yours", label: "Built around the workflow your specialty runs on" },
 ];
 
 const HeroSection = () => {
