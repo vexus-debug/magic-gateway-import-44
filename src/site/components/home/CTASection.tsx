@@ -16,10 +16,10 @@ const CTASection = () => {
           className="mx-auto max-w-2xl text-center"
         >
           <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
-            Your Clinic Could Look Like This Tomorrow
+            Find the System Built for Your Practice
           </h2>
           <p className="mb-8 text-lg text-muted-foreground">
-            Imagine knowing exactly what your clinic made today. Appointments running on time. Staff doing their jobs without you chasing anyone. That is what we built Clinexus to give you, from day one.
+            Dental, Eye Care, Fertility, Diagnostics or General Practice. Explore the system dedicated to your field and leave generic workarounds behind.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a href="https://wa.me/2349017758165?text=Hello%20I%20would%20like%20to%20know%20more%20about%20Clinexus" target="_blank" rel="noopener noreferrer">

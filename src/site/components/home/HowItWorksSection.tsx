@@ -3,20 +3,20 @@ import { motion } from "framer-motion";
 const steps = [
   {
     number: "01",
-    title: "Bring in the essentials",
-    description: "Add your services, staff, opening hours and existing patient records. We keep the setup focused on what your clinic uses every day.",
+    title: "Choose your specialty",
+    description: "Start with the system built for your field, with its clinical tools already in place, not a blank template to configure.",
     outcome: "Services · Staff · Patient records",
   },
   {
     number: "02",
-    title: "Set the working routine",
-    description: "Define appointment lengths, staff access and payment steps around the way your team already works.",
+    title: "Bring in your team and records",
+    description: "Add your practitioners, services and existing patient records into a system that already speaks your specialty.",
     outcome: "Schedules · Access · Billing",
   },
   {
     number: "03",
-    title: "Run the day from one place",
-    description: "Appointments, invoices and clinical activity stay connected, giving every authorised team member the same current view.",
+    title: "Practise without workarounds",
+    description: "Charting, orders, lab work and billing follow the real workflow of your discipline, with no manual notes or spreadsheets.",
     outcome: "Appointments · Invoices · Activity",
   },
 ];
@@ -33,12 +33,12 @@ const HowItWorksSection = () => {
             transition={{ duration: 0.45 }}
             className="lg:col-span-4"
           >
-            <span className="site-eyebrow block text-primary">Getting started</span>
+            <span className="site-eyebrow block text-primary">Find your system</span>
             <h2 className="mt-4 max-w-sm text-3xl text-foreground md:text-4xl">
-              A considered move, not a disruption.
+              Find the System Built for Your Practice.
             </h2>
             <p className="mt-5 max-w-sm leading-relaxed text-muted-foreground">
-              Clinexus is organised around your existing clinic routine, so the move is clear for staff and patients.
+              Choose the dedicated system for your field: Dental, Eye Care, Fertility, Diagnostics or General Practice.
             </p>
           </motion.header>
 

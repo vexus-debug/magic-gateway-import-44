@@ -44,10 +44,10 @@ const DashboardShowcaseSection = () => {
             Real Dashboard
           </span>
           <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">
-            This Is What Running a Tight Clinic Looks Like
+            Purpose Built for the Chair, Not Adapted From a Template
           </h2>
           <p className="mx-auto max-w-xl text-muted-foreground">
-            No mockups here, these are real screens from a real clinic running on Clinexus today. Swipe through and see for yourself.
+            These are not generic admin screens. They are clinical tools designed around the practitioner's actual workflow. Swipe through the dental system and see for yourself.
           </p>
         </motion.div>
 

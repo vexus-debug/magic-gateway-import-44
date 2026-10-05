@@ -4,23 +4,23 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const schedule = [
-  { time: "08:30", patient: "Adaeze Okonkwo", detail: "Scaling & polishing", status: "Checked in" },
-  { time: "09:15", patient: "Tunde Bakare", detail: "Root canal, session 2", status: "In chair" },
-  { time: "10:00", patient: "Grace Nwosu", detail: "Eye test & refraction", status: "Confirmed" },
-  { time: "11:30", patient: "Samuel Eze", detail: "Crown fitting", status: "Reminder sent" },
+  { time: "08:30", patient: "Adaeze Okonkwo", detail: "Scaling and polishing, perio chart", status: "Checked in" },
+  { time: "09:15", patient: "Tunde Bakare", detail: "Root canal, tooth 36, session 2", status: "In chair" },
+  { time: "10:00", patient: "Ifeoma Obi", detail: "Composite filling, tooth 14", status: "Confirmed" },
+  { time: "11:30", patient: "Samuel Eze", detail: "Crown fitting, tooth 26", status: "Reminder sent" },
 ];
 
 const invoices = [
-  { ref: "INV-2841", patient: "Adaeze Okonkwo", amount: "₦85,000", state: "Paid" },
-  { ref: "INV-2838", patient: "Michael Adeyemi", amount: "₦142,500", state: "Part payment" },
-  { ref: "INV-2830", patient: "Grace Nwosu", amount: "₦36,000", state: "12 days overdue" },
-  { ref: "INV-2827", patient: "HMO — Avon", amount: "₦410,000", state: "Awaiting claim" },
+  { ref: "OD 1.25 · OS 1.50 sph", patient: "Grace Nwosu", amount: "Refraction", state: "Rx signed" },
+  { ref: "Progressive lenses", patient: "Michael Adeyemi", amount: "Frame order", state: "At optical lab" },
+  { ref: "IOP 16 / 17 mmHg", patient: "Bisi Alade", amount: "Tonometry", state: "Recorded" },
+  { ref: "Single vision, metal frame", patient: "Chidi Okafor", amount: "Frame order", state: "Ready for fitting" },
 ];
 
 const labCases = [
-  { caseId: "LAB-118", work: "Zirconia crown, tooth 26", lab: "Bridgeway Dental Lab", due: "Due tomorrow" },
-  { caseId: "LAB-121", work: "Upper partial denture", lab: "Bridgeway Dental Lab", due: "In transit" },
-  { caseId: "LAB-124", work: "Single vision lenses", lab: "Optica Works", due: "Ready for fitting" },
+  { caseId: "LAB 118", work: "Zirconia crown, tooth 26", lab: "Bridgeway Dental Lab", due: "Due tomorrow" },
+  { caseId: "LAB 121", work: "Upper partial denture", lab: "Bridgeway Dental Lab", due: "In transit" },
+  { caseId: "LAB 124", work: "Night guard, upper arch", lab: "Bridgeway Dental Lab", due: "Ready for fitting" },
 ];
 
 const panelClass =
@@ -37,13 +37,13 @@ const FeaturesOverviewSection = () => {
           transition={{ duration: 0.5 }}
           className="max-w-2xl"
         >
-          <span className="site-eyebrow block text-white/45">A day inside your clinic</span>
+          <span className="site-eyebrow block text-white/45">Every specialty in its native element</span>
           <h2 className="mt-4 text-3xl text-white md:text-4xl">
-            Your schedule, the money owed you, and every lab case, in one place.
+            Separate systems, each speaking the language of its own field.
           </h2>
           <p className="mt-4 text-white/55">
-            No dashboards full of icons. Just the three things that decide whether your day runs
-            well: who is coming in, who still owes you, and what is sitting at the lab.
+            Dental runs on tooth charts and lab cases. Eye care runs on refractions and frame orders.
+            Clinexus never pretends one generic clinic does both.
           </p>
         </motion.div>
 
@@ -56,8 +56,8 @@ const FeaturesOverviewSection = () => {
             className={panelClass}
           >
             <header className="flex items-baseline justify-between border-b border-white/10 pb-3">
-              <h3 className="text-lg text-white">Today's schedule</h3>
-              <span className="text-xs text-white/40">Tue, 12 Mar</span>
+              <h3 className="text-lg text-white">Dental · Today's chairs</h3>
+              <span className="text-xs text-white/40">Dental system</span>
             </header>
             <ul className="divide-y divide-white/[0.07]">
               {schedule.map((item) => (
@@ -83,8 +83,8 @@ const FeaturesOverviewSection = () => {
             className={panelClass}
           >
             <header className="flex items-baseline justify-between border-b border-white/10 pb-3">
-              <h3 className="text-lg text-white">Invoices</h3>
-              <span className="text-xs text-white/40">₦673,500 outstanding</span>
+              <h3 className="text-lg text-white">Eye care · Optical desk</h3>
+              <span className="text-xs text-white/40">Eye care system</span>
             </header>
             <ul className="divide-y divide-white/[0.07]">
               {invoices.map((invoice) => (
@@ -109,7 +109,7 @@ const FeaturesOverviewSection = () => {
             className={panelClass}
           >
             <header className="flex items-baseline justify-between border-b border-white/10 pb-3">
-              <h3 className="text-lg text-white">Lab cases</h3>
+              <h3 className="text-lg text-white">Dental · Lab cases</h3>
               <span className="text-xs text-white/40">3 open</span>
             </header>
             <ul className="divide-y divide-white/[0.07]">
@@ -128,7 +128,7 @@ const FeaturesOverviewSection = () => {
             </ul>
             <p className="mt-4 border-t border-white/10 pt-4 text-xs leading-relaxed text-white/40">
               Every case shows who is working on it and when it is due, so nothing goes quiet
-              between your clinic and the lab.
+              between your practice and the dental lab.
             </p>
           </motion.div>
         </div>
@@ -142,7 +142,7 @@ const FeaturesOverviewSection = () => {
         >
           <Link to="/industries">
             <Button variant="ghost" className="gap-2 rounded-sm px-0 text-white/75 hover:bg-transparent hover:text-white">
-              See everything you get <ArrowRight className="h-4 w-4" />
+              Explore each specialty <ArrowRight className="h-4 w-4" />
             </Button>
           </Link>
         </motion.div>
